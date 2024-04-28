@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">Başlık</string>
+    <string name="content">Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500"lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</string>
+    <string name="calendar">Takvim</string>
+    <string name="gender_1">Erkek</string>
+    <string name="gender_2">Kadın</string>
+    <string name="gender_3">O</string>
+    <string name="genders">Cinsiyetler</string>
+    <string name="select_date">Tarih Seç</string>
+    <string name="no_date">Tarih Seçilmedi</string>
+</resources>

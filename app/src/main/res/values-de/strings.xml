@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title">der Titel</string>
+    <string name="content">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter Schriftsteller eine Hand voll Wörter nahm und diese durcheinander warf um ein Musterbuch zu erstellen. Es hat nicht nur 5 Jahrhunderte überlebt, sondern auch in Spruch in die elektronische Schriftbearbeitung geschafft (bemerke, nahezu unverändert). Bekannt wurde es 1960, mit dem erscheinen von "Letraset", welches Passagen von Lorem Ipsum enhielt, so wie Desktop Software wie "Aldus PageMaker" - ebenfalls mit Lorem Ipsum.</string>
+    <string name="calendar">der Kalendar</string>
+    <string name="gender_1">er</string>
+    <string name="gender_2">sie</string>
+    <string name="gender_3">es</string>
+    <string name="genders">das Geschlechter</string>
+    <string name="select_date">Datum auswählen</string>
+    <string name="no_date">Kein Datum ausgewählt</string>
+</resources>
