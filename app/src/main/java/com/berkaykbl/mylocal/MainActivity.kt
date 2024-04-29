@@ -34,6 +34,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         currentLocale = Locale.getDefault().toLanguageTag()
+        val prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
+        val locale = prefs.getString("app_locale", "")
+
+        if (locale != null) {
+            setLocale(locale)
+        }
 
         if (savedInstanceState != null && savedInstanceState.containsKey("selectedDate")) {
             selectedCalendar = Calendar.getInstance().apply {
@@ -80,10 +86,14 @@ class MainActivity : AppCompatActivity() {
         binding.date.text = formattedDate
     }
 
-    fun setLocale(language: String) {
-        val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags(language)
+    fun setLocale(locale: String) {
+        val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags(locale)
         AppCompatDelegate.setApplicationLocales(appLocale)
-        Locale.setDefault(Locale(language))
+        Locale.setDefault(Locale(locale))
+
+        val sharedPref = getSharedPreferences("settings", Context.MODE_PRIVATE).edit()
+        sharedPref.putString("app_locale", locale)
+        sharedPref.apply()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
