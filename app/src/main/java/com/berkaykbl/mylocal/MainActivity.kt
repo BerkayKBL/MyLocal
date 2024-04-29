@@ -23,9 +23,9 @@ import java.util.Locale
 
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
     private lateinit var currentLocale: String
-    private var selectedCalendar : Calendar? = null
+    private var selectedCalendar: Calendar? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -87,8 +87,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun setLocale(locale: String) {
-        val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags(locale)
-        AppCompatDelegate.setApplicationLocales(appLocale)
+        AppCompatDelegate.setApplicationLocales(
+            LocaleListCompat.forLanguageTags(locale)
+        )
         Locale.setDefault(Locale(locale))
 
         val sharedPref = getSharedPreferences("settings", Context.MODE_PRIVATE).edit()
