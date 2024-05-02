@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
         val sharedPref = getSharedPreferences("settings", Context.MODE_PRIVATE).edit()
         sharedPref.putString("app_locale", locale)
-        sharedPref.apply()
+        sharedPref.apply() // Save last language to app_locale with SharedPreferences
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
